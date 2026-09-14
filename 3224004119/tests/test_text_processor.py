@@ -27,7 +27,7 @@ class TestTextProcessor(unittest.TestCase):
         file_path = os.path.join(self.test_data_dir, 'orig.txt')
         content = TextProcessor.read_file(file_path)
         self.assertTrue(len(content) > 0)
-        self.assertIn('今天', content)
+        self.assertIn('活着', content)
 
     # ===== 测试用例2：读取不存在的文件 =====
     def test_read_nonexistent_file(self):
